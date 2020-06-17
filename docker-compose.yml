@@ -1,0 +1,18 @@
+version: '3.5'
+
+services:
+
+  textblob-flask:
+    image: textblob-flask:1.0
+    build:
+      context: .
+    command:
+      - /bin/sh
+      - -c
+      - |
+        python app.py
+    volumes:
+      - .:/app
+    working_dir: /app
+    ports:
+      - "5000:5000"
