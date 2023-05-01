@@ -1,5 +1,5 @@
 numpy==1.19.1
 textblob==0.15.3
-Flask==1.1.1
+Flask==2.3.2
 Flask-RESTful==0.3.8
 elasticsearch==7.10.1
